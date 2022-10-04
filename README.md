@@ -1,2 +1,0 @@
-# PraktikaPalPALICH
-Задания Пал Палыча 
