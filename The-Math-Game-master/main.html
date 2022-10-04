@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./css/about-game.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+  <div class="list">
+    <!-- A -->
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Последовательность Фибоначи через prompt,ввести количество итераций.</span> <span class="lang">[JavaScript]</span></summary>
+        <pre><code class="code js">
+            var n = parseInt(window.prompt(‘input’));
+            // 1 1 2 3 5 8
+            // f s t
+            var first = 1;
+            var second = 1;
+            var third;
+            if (n > 2){
+            for (i = 0;i < n-2;i ++){
+            third = first + second;
+            first = second;
+            second = third;
+            }
+            document.write(third)
+            }else{
+            document.write(1)
+            }        
+    </code></pre>
+      </details>
+    </div>  <!-- A -->
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Найти количество цифр "3" в чисел</span> <span class="lang">[JavaScript]</span></summary>
+        <pre><code class="code js">
+            var numb1 = prompt("Введите  число : ", );
+            function getDigitAmount(n) {
+                var c = 1;
+                while (( n /= 10)>=1)
+                    c++;
+                return (c);
+            }
+            alert( getDigitAmount(c))       
+    </code></pre>
+      </details>
+    </div>
+    </div>
+  
+   
+   
+   <a href="https://github.com/424Nkita-Csharsfta4/Game-Math-children" target="_blank">Перейти к игре
+<div class="container">
+
+   
+    <h1>Создать игру для обучения устному счету детей</h1>
+  
+    <p>Программа должна генирировать автоматически примеры типа, число1+число2=,проверять ответы,реагировать на ошибки</p>
+  
+    <p>Выставлять оценку за решение.Ниже показан алгоритм генирации чисел</p>
+  
+    <pre>
+        function generateQA()
+        {
+            //генирация чисел от  1-10
+            var x = 1 + Math.round(9 * Math.random());
+            var y = 1 + Math.round(9 * Math.random());
+            //правильный ответ
+            correctAnswer = x + y;
+            //Постановка вопроса
+            document.querySelector("#question").innerHTML = x + " + " + y;
+            //установка случайной позиции для правильного ответа
+            var correctPosition = 1 + Math.round(3 * Math.random());
+            document.querySelector("#box" + correctPosition).innerHTML = correctAnswer;
+        
+            var answers = [correctAnswer];
+        
+            //проверка и замена повторяющихся значений
+            for (let i = 1; i < 5; i++) {
+                if (i != correctPosition) {
+                    var wrongAnswer;
+                    do {
+                        wrongAnswer = (1 + Math.round(9 * Math.random())) * (1 + Math.round(9 * Math.random()));
+                    } while ((answers.indexOf(wrongAnswer)) > -1)
+                    document.querySelector("#box" + i).innerHTML = wrongAnswer;
+                    answers.push(wrongAnswer)
+                }
+            }
+        }</pre>
+    </a>
+  </div>
+  
+  <!-- partial -->
+    
+    
+
+<div class="message">
+ <a href="https://junior-fronten-pmr-tiraspol.on.drv.tw/Audio-Main-Web-App(PMR)-Copirlink(SutaMoshRep)/admins/dist/" target="_blank" >Админы</a> </i>
+</div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scss.min.js'></script>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

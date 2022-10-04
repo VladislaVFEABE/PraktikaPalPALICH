@@ -1,0 +1,136 @@
+body {
+  font-family: monospace;
+}
+
+.container {
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+  display: block;
+  position: relative;
+  border: solid 3px #f7f576;
+  padding: 40px 60px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 17px;
+  line-height: 28px;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  -webkit-box-shadow: 3px 15px 8px -10px rgba(137, 151, 98, 0.437);
+          box-shadow: 3px 15px 8px -10px rgba(137, 151, 98, 0.437);
+  -webkit-transition: all 0.13s ease-in;
+  transition: all 0.13s ease-in;
+}
+
+.container:hover {
+  -webkit-transform: translateY(-10px) rotate(1deg);
+          transform: translateY(-10px) rotate(1deg);
+  -webkit-box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.container:hover .border {
+  -webkit-transform: translateY(4px) rotate(-5deg);
+          transform: translateY(4px) rotate(-5deg);
+}
+
+.border {
+  position: absolute;
+  -webkit-transition: all 0.13s ease-in;
+  transition: all 0.13s ease-in;
+}
+
+.border:before,
+.border:after {
+  color: #0028ef;
+  font-size: 15px;
+  position: absolute;
+}
+
+.tl {
+  position: absolute;
+  left: -50px;
+  top: -63px;
+  font-weight: 600;
+}
+
+.tl:before {
+  content: "37px";
+  left: 120px;
+  top: 30px;
+}
+
+.tl:after {
+  content: "140px";
+  left: 0px;
+  top: 80px;
+}
+
+.tr {
+  right: -50px;
+  top: -63px;
+  font-weight: 600;
+}
+
+.tr:before {
+  content: "23px";
+  left: 0;
+  top: 30px;
+}
+
+.tr:after {
+  content: "130px";
+  left: 130px;
+  top: 80px;
+  color: red;
+}
+
+.bl {
+  left: -50px;
+  bottom: -71px;
+  font-weight: 600;
+}
+
+.bl:before {
+  content: "110px";
+  left: 120px;
+  top: -30px;
+}
+
+.bl:after {
+  content: "19px";
+  left: 0px;
+  top: -90px;
+}
+
+.br {
+  right: -50px;
+  bottom: -63px;
+  font-weight: 600;
+}
+
+.br:before {
+  content: "120px";
+  left: 0;
+  top: -30px;
+}
+
+.br:after {
+  content: "24px";
+  right: -10px;
+  top: -80px;
+}
+
+pre {
+  background: #6e86ce8d;
+  padding: 20px;
+  color: #fffb03;
+}
+
+a {
+  text-decoration: none;
+  color: #4dff4d;
+}
+/*# sourceMappingURL=about-game.css.map */
